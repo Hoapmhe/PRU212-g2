@@ -3,9 +3,8 @@ using System.Collections; // Cần import để dùng Coroutine
 
 public class Collisions : MonoBehaviour
 {
-    [SerializeField] private float destroyDelay = 1f;
     [SerializeField] private int maxPackages = 3;
-    [SerializeField] private float pickupTime = 1f; // Thời gian nhặt quà (2s)
+    [SerializeField] private float pickupTime = 1f; // Thời gian nhặt quà (1s)
     [SerializeField] private float deliveryTime = 3f; // Thời gian giao hàng (3s)
 
     private int packageCount = 0;

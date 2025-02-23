@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class DriverController : MonoBehaviour
 {
-    [SerializeField] private float baseSpeed = 5f;
-    [SerializeField] private float minSpeed = 2f;
-    [SerializeField] private float speedDecrease = 1f;
-    [SerializeField] private float steerSpeed = 30f;
+    [SerializeField] private float baseSpeed = 5f; //toc do co ban
+    [SerializeField] private float minSpeed = 2f; //toc do cham nhat khi nhat toi da Hop
+    [SerializeField] private float speedDecrease = 1f; //giam toc do sau moi lan nhat Hop
+    [SerializeField] private float steerSpeed = 80f; //toc do quay
 
     private float currentSpeed;
 
