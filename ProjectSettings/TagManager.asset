@@ -12,6 +12,7 @@ TagManager:
   - Curve
   - Corner
   - Intersection
+  - Flash
   layers:
   - Default
   - TransparentFX
