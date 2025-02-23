@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+
 [System.Serializable]
 public class SpawnObject
 {
@@ -8,24 +9,22 @@ public class SpawnObject
 	public int numberToSpawn = 5;
 	public string tag;
 }
+
 public class ObjectSpawner : MonoBehaviour
 {
 	public SpawnObject[] objectsToSpawn;
 	public string[] spawnObjectTags = { "Bridge", "Road", "Corner", "Curve", "Intersection" };
 
-	// Danh sách lưu trữ các vị trí đã được sử dụng
-	private HashSet<Vector3> usedPositions = new HashSet<Vector3>();
+	private List<Vector3> usedPositions = new List<Vector3>(); 
 
 	void Start()
 	{
 		SpawnAllObjects();
 	}
 
-
 	public void SpawnAllObjects()
 	{
-		// Reset danh sách vị trí đã sử dụng khi bắt đầu spawn mới
-		usedPositions.Clear();
+		usedPositions.Clear(); 
 
 		foreach (SpawnObject spawnObject in objectsToSpawn)
 		{
@@ -35,24 +34,17 @@ public class ObjectSpawner : MonoBehaviour
 
 	private void SpawnObjects(SpawnObject spawnObject)
 	{
-		// Xóa object cũ trước khi spawn
-		GameObject[] oldObjects = GameObject.FindGameObjectsWithTag(spawnObject.tag);
-		foreach (GameObject obj in oldObjects)
+		foreach (GameObject obj in GameObject.FindGameObjectsWithTag(spawnObject.tag))
 		{
-			Vector3 pos = obj.transform.position;
-			usedPositions.Remove(pos); // Xóa vị trí cũ khỏi danh sách đã sử dụng
 			Destroy(obj);
 		}
 
-		// Lấy danh sách vị trí hợp lệ
 		List<GameObject> spawnableObjects = new List<GameObject>();
 		foreach (string tag in spawnObjectTags)
 		{
-			GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag(tag);
-			foreach (GameObject obj in taggedObjects)
+			foreach (GameObject obj in GameObject.FindGameObjectsWithTag(tag))
 			{
-				// Chỉ thêm vào danh sách nếu vị trí chưa được sử dụng
-				if (!usedPositions.Contains(obj.transform.position))
+				if (!usedPositions.Contains(obj.transform.position)) 
 				{
 					spawnableObjects.Add(obj);
 				}
@@ -61,7 +53,7 @@ public class ObjectSpawner : MonoBehaviour
 
 		if (spawnableObjects.Count < spawnObject.numberToSpawn)
 		{
-			Debug.LogWarning($"Không đủ vị trí để spawn {spawnObject.name}. Có {spawnableObjects.Count} vị trí.");
+			Debug.LogWarning($"Không đủ vị trí để spawn {spawnObject.name}. Chỉ có {spawnableObjects.Count} vị trí.");
 		}
 
 		int spawnedCount = 0;
@@ -71,28 +63,19 @@ public class ObjectSpawner : MonoBehaviour
 			GameObject spawnPosition = spawnableObjects[randomIndex];
 			Vector3 position = spawnPosition.transform.position;
 
-			// Kiểm tra lại để đảm bảo vị trí vẫn chưa được sử dụng
-			if (!usedPositions.Contains(position))
-			{
-				Quaternion rotation = spawnObject.prefab.transform.rotation;
+			GameObject newObject = Instantiate(spawnObject.prefab, position, spawnObject.prefab.transform.rotation);
+			newObject.transform.localScale = Vector3.one;
+			newObject.tag = spawnObject.tag;
 
-				// Tạo object mới
-				GameObject newObject = Instantiate(spawnObject.prefab, position, rotation);
-				newObject.transform.localScale = Vector3.one;
-				newObject.tag = spawnObject.tag;
+			usedPositions.Add(position); 
+			spawnableObjects.RemoveAt(randomIndex); 
 
-				// Thêm vị trí vào danh sách đã sử dụng
-				usedPositions.Add(position);
-				spawnedCount++;
-			}
-
-			// Xóa vị trí khỏi danh sách để tránh trùng lặp
-			spawnableObjects.RemoveAt(randomIndex);
+			spawnedCount++;
 		}
 
 		if (spawnedCount < spawnObject.numberToSpawn)
 		{
-			Debug.LogWarning($"Không đủ chỗ để spawn {spawnObject.name}. Spawn được {spawnedCount}/{spawnObject.numberToSpawn}");
+			Debug.LogWarning($"Không đủ vị trí để spawn {spawnObject.name}. Chỉ spawn được {spawnedCount}/{spawnObject.numberToSpawn}");
 		}
 	}
 }
