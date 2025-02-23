@@ -3562,10 +3562,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5001412d250bc4a9f16bf0710746b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpeed: 3
+  baseSpeed: 5
   minSpeed: 2
   speedDecrease: 1
-  steerSpeed: 60
+  steerSpeed: 80
 --- !u!50 &1641681083
 Rigidbody2D:
   serializedVersion: 5
@@ -3651,8 +3651,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyDelay: 1
   maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
 --- !u!1 &1674474548
 GameObject:
   m_ObjectHideFlags: 0
@@ -4848,3 +4849,4 @@ SceneRoots:
   - {fileID: 1528381323}
   - {fileID: 66315325}
   - {fileID: 78871933}
+  - {fileID: 640192116}
