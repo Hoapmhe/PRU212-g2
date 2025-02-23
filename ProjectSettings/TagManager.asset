@@ -7,6 +7,11 @@ TagManager:
   - Package
   - Location
   - Obstacle
+  - Bridge
+  - Road
+  - Curve
+  - Corner
+  - Intersection
   layers:
   - Default
   - TransparentFX
