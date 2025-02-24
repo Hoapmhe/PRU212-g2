@@ -1033,7 +1033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &414319789
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3106,7 +3106,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1051788272
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5157,6 +5157,10 @@ MonoBehaviour:
   maxPackages: 3
   pickupTime: 1
   deliveryTime: 3
+  spriteRenderer: {fileID: 1641681080}
+  defaultCar: {fileID: 4273724031106649725, guid: 949f5f0986a285741872438b9638f3f9, type: 3}
+  yellowCar: {fileID: 9089695645353676025, guid: 8e22211d0935fa2409a103fc88bb3679, type: 3}
+  blueCar: {fileID: 944204929983791209, guid: e706f1f55053ecc46a6a269c5a408bc0, type: 3}
 --- !u!1 &1647306210
 GameObject:
   m_ObjectHideFlags: 0
@@ -5376,7 +5380,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7.4139404, y: 16.647}
+  m_AnchoredPosition: {x: 7.4139404, y: 16.646973}
   m_SizeDelta: {x: -471.565, y: -199.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1674474548
