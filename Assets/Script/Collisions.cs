@@ -7,6 +7,12 @@ public class Collisions : MonoBehaviour
     [SerializeField] private float pickupTime = 1f; // Thời gian nhặt quà (1s)
     [SerializeField] private float deliveryTime = 3f; // Thời gian giao hàng (3s)
 
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite defaultCar; // Xe màu hồng
+    [SerializeField] private Sprite yellowCar;   // Xe màu vang
+    [SerializeField] private Sprite blueCar;     // Xe màu xanh
+
+
     private int packageCount = 0;
     private DriverController driverController;
     private Coroutine pickupCoroutine;
@@ -46,16 +52,26 @@ public class Collisions : MonoBehaviour
 
     private IEnumerator PickupPackage(GameObject package)
     {
-        Debug.Log("Bắt đầu nhặt quà... ⏳ (1s)");
-        yield return new WaitForSeconds(pickupTime); // Chờ 1 giây
+        Debug.Log("Bắt đầu nhặt quà... ⏳ (2s)");
+        yield return new WaitForSeconds(pickupTime);
 
-        Debug.Log("Nhặt quà thành công! 🎁");
         packageCount++;
-        driverController.DecreaseSpeed(); // Giảm tốc độ
+        driverController.DecreaseSpeed();
         Destroy(package);
 
-        pickupCoroutine = null; // Reset Coroutine sau khi hoàn thành
+        // Thay đổi màu xe
+        if (packageCount == 1 || packageCount == 2)
+        {
+            spriteRenderer.sprite = yellowCar; // Xe xanh khi có 1 hoặc 2 quà
+        }
+        else if (packageCount == 3)
+        {
+            spriteRenderer.sprite = blueCar; // Xe đỏ khi đủ 3 quà
+        }
+
+        pickupCoroutine = null;
     }
+
 
     private IEnumerator DeliverPackages()
     {
@@ -67,6 +83,8 @@ public class Collisions : MonoBehaviour
         packageCount = 0; // Reset số quà sau khi giao
         driverController.ResetSpeed(); // Khôi phục tốc độ
 
+        // Đổi lại xe về màu hồng sau khi giao hàng
+        spriteRenderer.sprite = defaultCar;
         deliveryCoroutine = null; // Reset Coroutine sau khi hoàn thành
 
         
