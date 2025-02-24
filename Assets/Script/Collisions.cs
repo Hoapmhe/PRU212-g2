@@ -94,7 +94,6 @@ public class Collisions : MonoBehaviour
     {
         if (other.CompareTag("Package") && pickupCoroutine != null)
         {
-            Debug.Log("Bỏ lỡ quà vì đi quá nhanh! ❌");
             StopCoroutine(pickupCoroutine);
             pickupCoroutine = null;
         }
