@@ -6,6 +6,7 @@ public class DriverController : MonoBehaviour
     [SerializeField] private float minSpeed = 2f; //toc do cham nhat khi nhat toi da Hop
     [SerializeField] private float speedDecrease = 1f; //giam toc do sau moi lan nhat Hop
     [SerializeField] private float steerSpeed = 80f; //toc do quay
+    [SerializeField] private GameManager gameManager;
 
     private float currentSpeed;
 
@@ -17,6 +18,10 @@ public class DriverController : MonoBehaviour
     void Update()
     {
         HandleMoving();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            gameManager.PauseGame();
+        }
     }
 
     void HandleMoving()
