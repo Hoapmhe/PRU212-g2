@@ -11,7 +11,7 @@ public class DriverController : MonoBehaviour
 
     void Start()
     {
-        currentSpeed = baseSpeed;
+        currentSpeed = baseSpeed; 
     }
 
     void Update()
