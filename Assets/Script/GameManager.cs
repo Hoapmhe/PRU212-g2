@@ -5,10 +5,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject mainMenu;
     //[SerializeField] private GameObject gameOverMenu;
     [SerializeField] private GameObject pauseGameMenu;
-
+    [SerializeField] private GameObject background;
     void Start()
     {
         MainMenu();
+        background.SetActive(true);
     }
 
     public void MainMenu()

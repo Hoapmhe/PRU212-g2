@@ -1001,6 +1001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 237118424}
   pauseGameMenu: {fileID: 1649950473}
+  background: {fileID: 1051788271}
 --- !u!4 &386093850
 Transform:
   m_ObjectHideFlags: 0
@@ -5376,7 +5377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7.4139404, y: 16.647}
+  m_AnchoredPosition: {x: 7.4139404, y: 16.646973}
   m_SizeDelta: {x: -471.565, y: -199.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1674474548
