@@ -32,6 +32,6 @@ public class TimeDisplay : MonoBehaviour
         int minutes = Mathf.FloorToInt(elapsedTime / 60);
         int seconds = Mathf.FloorToInt(elapsedTime % 60); 
 
-        timeText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+        timeText.text = "Time: " + minutes.ToString("00") + ":" + seconds.ToString("00");
     }
 }

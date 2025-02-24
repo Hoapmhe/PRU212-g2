@@ -11,10 +11,18 @@ public class Collisions : MonoBehaviour
     private DriverController driverController;
     private Coroutine pickupCoroutine;
     private Coroutine deliveryCoroutine;
+    private ReceiveDisplay receiveDisplay; //hien thi so luong Package da giao
 
     private void Start()
     {
         driverController = GetComponent<DriverController>(); // Lấy script DriverController từ xe
+        receiveDisplay = FindFirstObjectByType<ReceiveDisplay>();
+
+
+        if (receiveDisplay == null)
+        {
+            Debug.LogError("Không tìm thấy ReceiveDisplay trong Scene!");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -55,10 +63,13 @@ public class Collisions : MonoBehaviour
         yield return new WaitForSeconds(deliveryTime); // Chờ 3 giây
 
         Debug.Log("Giao hàng thành công! ✅");
+        receiveDisplay.IncrementReceivedCount(packageCount);
         packageCount = 0; // Reset số quà sau khi giao
         driverController.ResetSpeed(); // Khôi phục tốc độ
 
         deliveryCoroutine = null; // Reset Coroutine sau khi hoàn thành
+
+        
     }
 
     private void OnTriggerExit2D(Collider2D other)
