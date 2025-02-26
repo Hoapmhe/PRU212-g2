@@ -5,7 +5,7 @@ public class ReceiveDisplay : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI receivedText;
     private int receivedCount = 00;
-
+    private int onDelivery = 00;
     void Awake()
     {
         GameObject timeDisplayObject = GameObject.Find("CollectedBoxesText");
@@ -30,11 +30,17 @@ public class ReceiveDisplay : MonoBehaviour
         UpdateReceivedUI();
     }
 
+    public void CountBoxOnCar(int number)
+    {
+        onDelivery = number;
+        UpdateReceivedUI();
+    }
+
     private void UpdateReceivedUI()
     {
         if (receivedText != null)
         {
-            receivedText.text = "Delivered: " + receivedCount;
+            receivedText.text = "Delivered: " + receivedCount + ", on delivery: " + onDelivery;
         }
         else
         {

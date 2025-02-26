@@ -58,6 +58,7 @@ public class Collisions : MonoBehaviour
         yield return new WaitForSeconds(pickupTime);
 
         packageCount++;
+        receiveDisplay.CountBoxOnCar(packageCount);
         driverController.DecreaseSpeed();
         Destroy(package);
 
@@ -82,7 +83,9 @@ public class Collisions : MonoBehaviour
 
         Debug.Log("Giao hàng thành công! ✅");
         receiveDisplay.IncrementReceivedCount(packageCount);
+
         packageCount = 0; // Reset số quà sau khi giao
+        receiveDisplay.CountBoxOnCar(packageCount);
         driverController.ResetSpeed(); // Khôi phục tốc độ
 
         // Đổi lại xe về màu hồng sau khi giao hàng

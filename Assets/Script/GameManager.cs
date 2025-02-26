@@ -6,10 +6,13 @@ public class GameManager : MonoBehaviour
     //[SerializeField] private GameObject gameOverMenu;
     [SerializeField] private GameObject pauseGameMenu;
     [SerializeField] private GameObject background;
+    [SerializeField] private GameObject miniCamera;
+    
     void Start()
     {
         MainMenu();
         background.SetActive(true);
+        miniCamera.SetActive(false);
     }
 
     public void MainMenu()
@@ -22,6 +25,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        miniCamera.SetActive(true);
         mainMenu.SetActive(false);
         //gameOverMenu.SetActive(false);
         pauseGameMenu.SetActive(false);
