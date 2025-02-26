@@ -18,11 +18,13 @@ public class Collisions : MonoBehaviour
     private Coroutine pickupCoroutine;
     private Coroutine deliveryCoroutine;
     private ReceiveDisplay receiveDisplay; //hien thi so luong Package da giao
+    private Rigidbody2D rb; // Rigidbody2D của xe
 
     private void Start()
     {
         driverController = GetComponent<DriverController>(); // Lấy script DriverController từ xe
         receiveDisplay = FindFirstObjectByType<ReceiveDisplay>();
+        rb = GetComponent<Rigidbody2D>();
 
 
         if (receiveDisplay == null)
@@ -105,4 +107,24 @@ public class Collisions : MonoBehaviour
             deliveryCoroutine = null;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Rock")) // Hòn đá có tag là "Rock"
+        {
+            if (rb != null)
+            {
+                float impactForce = rb.linearVelocity.magnitude; // Lấy tốc độ xe
+                Debug.Log("Va vào hòn đá! Lực va chạm: " + impactForce);
+
+                // Tạo phản lực nhẹ nếu xe đang đi nhanh
+                if (impactForce > 2f) // Ngưỡng lực va chạm
+                {
+                    Vector2 bounceDirection = collision.contacts[0].normal; // Hướng phản lực
+                    rb.AddForce(bounceDirection * impactForce * 50f); // Điều chỉnh độ nảy
+                }
+            }
+        }
+    }
+
 }
