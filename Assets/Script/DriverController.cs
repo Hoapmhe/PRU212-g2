@@ -10,8 +10,6 @@ public class DriverController : MonoBehaviour
 
 	private float currentSpeed;
 
-	//[SerializeField] private float bounceForce = 2f;
-
 	void Start()
 	{
 		currentSpeed = baseSpeed;
