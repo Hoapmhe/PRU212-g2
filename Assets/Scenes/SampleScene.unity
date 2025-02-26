@@ -537,6 +537,7 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -1.019285, y: -0.33474538}
+  - {x: -1.0192851, y: -0.33474684}
   - {x: -0.62546337, y: -0.46598572}
   - {x: -0.44041145, y: -0.66570413}
   - {x: -0.33732116, y: -1.0218583}
@@ -1087,17 +1088,85 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279570452}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxPackages: 3
-  pickupTime: 1
-  deliveryTime: 3
-  spriteRenderer: {fileID: 0}
-  defaultCar: {fileID: 0}
-  yellowCar: {fileID: 0}
-  blueCar: {fileID: 0}
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.7150113, y: 3.3556826}
+  - {x: 0.71330863, y: -3.4358788}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &279570456
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279570452}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.69379646, y: 3.3867853}
+  - {x: -0.69379616, y: 3.3867853}
+  - {x: -0.7067506, y: -3.3358564}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &357539859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1923,17 +1992,85 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530464249}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxPackages: 3
-  pickupTime: 1
-  deliveryTime: 3
-  spriteRenderer: {fileID: 0}
-  defaultCar: {fileID: 0}
-  yellowCar: {fileID: 0}
-  blueCar: {fileID: 0}
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.6704537, y: 3.386461}
+  - {x: 0.72083503, y: -3.3582406}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &530464253
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530464249}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.72083503, y: 3.3582406}
+  - {x: -0.72083473, y: 3.39799}
+  - {x: -0.7229535, y: -3.3017998}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &539493889
 GameObject:
   m_ObjectHideFlags: 0
@@ -4815,6 +4952,7 @@ GameObject:
   - component: {fileID: 1235608288}
   - component: {fileID: 1235608287}
   - component: {fileID: 1235608286}
+  - component: {fileID: 1235608287}
   m_Layer: 0
   m_Name: Road 3_0 (1)
   m_TagString: Road
@@ -4929,8 +5067,51 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 0.7359945, y: -3.4989195}
-  - {x: 0.73973995, y: 3.427512}
+  - {x: 0.6814391, y: -3.3539805}
+  - {x: 0.6887844, y: 3.313078}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1235608287
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235608283}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.7282432, y: 3.4133682}
+  - {x: -0.7022006, y: -3.312694}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -7735,17 +7916,90 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763762265}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxPackages: 3
-  pickupTime: 1
-  deliveryTime: 3
-  spriteRenderer: {fileID: 0}
-  defaultCar: {fileID: 0}
-  yellowCar: {fileID: 0}
-  blueCar: {fileID: 0}
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -5.0335693, y: 0.6694937}
+  - {x: -5.0262747, y: 1.3389874}
+  - {x: 4.9940443, y: 1.3651924}
+  - {x: 4.9983335, y: 0.6694946}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1763762269
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763762265}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -5.0159516, y: -0.7928219}
+  - {x: -5.020933, y: -1.3472738}
+  - {x: 4.9977236, y: -1.3719044}
+  - {x: 5.0335703, y: -0.6928549}
+  - {x: 5.0335703, y: -0.6342573}
+  - {x: 5.03357, y: -0.6342573}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1767539606
 GameObject:
   m_ObjectHideFlags: 0
@@ -8789,6 +9043,7 @@ GameObject:
   - component: {fileID: 2091998541}
   - component: {fileID: 2091998544}
   - component: {fileID: 2091998543}
+  - component: {fileID: 2091998544}
   m_Layer: 0
   m_Name: Curve 1_0
   m_TagString: Curve
@@ -8903,13 +9158,14 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -1.7289822, y: 2.153034}
-  - {x: -1.6180744, y: 1.247869}
-  - {x: -1.276041, y: 0.34953833}
-  - {x: -0.6609552, y: -0.34916973}
-  - {x: -0.011366129, y: -1.0007753}
-  - {x: 0.22139835, y: -1.475306}
-  - {x: 0.31889665, y: -2.0923853}
+  - {x: -0.3397014, y: 2.1037652}
+  - {x: -0.22783613, y: 1.3313112}
+  - {x: -0.007475853, y: 0.97249556}
+  - {x: 0.3099916, y: 0.6143141}
+  - {x: 0.69983673, y: 0.31597877}
+  - {x: 1.3698431, y: -0.58473206}
+  - {x: 1.6399164, y: -1.3209996}
+  - {x: 1.6683333, y: -2.075879}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -8951,14 +9207,16 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.33405876, y: 2.1075473}
-  - {x: -0.13693166, y: 1.1483951}
-  - {x: 0.45219755, y: 0.5158706}
-  - {x: 1.1040471, y: -0.10936785}
-  - {x: 1.5554333, y: -1.1012774}
-  - {x: 1.7289821, y: -2.1378722}
-  - {x: 1.7289821, y: -2.1378722}
-  - {x: 1.7289821, y: -2.1378722}
+  - {x: -1.6960814, y: 2.1087978}
+  - {x: -1.6543818, y: 1.5277057}
+  - {x: -1.5680528, y: 1.12709}
+  - {x: -1.3580937, y: 0.5614841}
+  - {x: -0.9710269, y: 0.019387722}
+  - {x: -0.6179085, y: -0.3974228}
+  - {x: -0.21258068, y: -0.71475697}
+  - {x: 0.08715081, y: -1.1475406}
+  - {x: 0.23245192, y: -1.5438628}
+  - {x: 0.3364607, y: -2.0671773}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
