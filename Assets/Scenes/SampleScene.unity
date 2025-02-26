@@ -957,7 +957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 550a8bbcfef2837489e0eb2b79915746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receivedText: {fileID: 0}
+  receivedText: {fileID: 414319790}
 --- !u!114 &357539865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,7 +970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5166ce7f095d61d4abf300e241211e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 0}
+  timeText: {fileID: 2106263563}
 --- !u!1 &386093848
 GameObject:
   m_ObjectHideFlags: 0
@@ -3816,9 +3816,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - name: Obstacle
-    prefab: {fileID: 5985347478435777929, guid: 43faf2110f818fb40abd68fcacbb7ef0, type: 3}
+    prefab: {fileID: 2039974291385363845, guid: ee6ae05db4f50a145aacfab517a55589, type: 3}
     numberToSpawn: 5
-    tag: Obstacle
+    tag: Rock
   - name: Package
     prefab: {fileID: 1771653685465069755, guid: 97f4348ece8a17942a88906de93d9cc2, type: 3}
     numberToSpawn: 5
@@ -5340,7 +5340,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

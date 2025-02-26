@@ -13,6 +13,7 @@ TagManager:
   - Corner
   - Intersection
   - Flash
+  - Rock
   layers:
   - Default
   - TransparentFX
