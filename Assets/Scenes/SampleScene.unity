@@ -265,6 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 97713989}
   - component: {fileID: 97713988}
+  - component: {fileID: 97713990}
   m_Layer: 0
   m_Name: Road 3_0 (2)
   m_TagString: Road
@@ -342,6 +343,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &97713990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97713987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &121599154
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 169813975}
   - component: {fileID: 169813974}
+  - component: {fileID: 169813976}
   m_Layer: 0
   m_Name: Road 2_0
   m_TagString: Road
@@ -516,6 +537,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &169813976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169813973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &200807408
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,6 +711,9 @@ GameObject:
   m_Component:
   - component: {fileID: 275597919}
   - component: {fileID: 275597918}
+  - component: {fileID: 275597922}
+  - component: {fileID: 275597921}
+  - component: {fileID: 275597920}
   m_Layer: 0
   m_Name: Road 2_0 (2)
   m_TagString: Road
@@ -748,6 +791,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!68 &275597920
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275597917}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.66833365, y: -1.7201141}
+  - {x: -0.6674731, y: 1.7201142}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &275597921
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275597917}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.69221044, y: -1.659971}
+  - {x: 0.69307005, y: 1.744171}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &275597922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275597917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &279570452
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 279570454}
   - component: {fileID: 279570453}
+  - component: {fileID: 279570455}
   m_Layer: 0
   m_Name: Road 3_0 (8)
   m_TagString: Road
@@ -835,6 +984,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &279570455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279570452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &357539859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,6 +1466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 451400849}
   - component: {fileID: 451400848}
+  - component: {fileID: 451400850}
   m_Layer: 0
   m_Name: Road 3_0
   m_TagString: Road
@@ -1375,6 +1544,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &451400850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451400847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,6 +1880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 530464251}
   - component: {fileID: 530464250}
+  - component: {fileID: 530464252}
   m_Layer: 0
   m_Name: Road 3_0 (9)
   m_TagString: Road
@@ -1769,6 +1958,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &530464252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530464249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &539493889
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,6 +2400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 666434184}
   - component: {fileID: 666434183}
+  - component: {fileID: 666434185}
   m_Layer: 0
   m_Name: Road 2_0 (4)
   m_TagString: Road
@@ -2269,6 +2478,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &666434185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666434182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &745207615
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,6 +2507,9 @@ GameObject:
   m_Component:
   - component: {fileID: 745207617}
   - component: {fileID: 745207616}
+  - component: {fileID: 745207620}
+  - component: {fileID: 745207619}
+  - component: {fileID: 745207618}
   m_Layer: 0
   m_Name: Road 3_0 (3)
   m_TagString: Road
@@ -2356,6 +2587,112 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &745207618
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745207615}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.6522972, y: -3.767406}
+  - {x: 0.7030867, y: 3.3699265}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &745207619
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745207615}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.68571025, y: -3.5600245}
+  - {x: -0.6870508, y: 3.4044893}
+  - {x: -0.6870505, y: 3.4044895}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &745207620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745207615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &748029782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2502,6 +2839,8 @@ GameObject:
   m_Component:
   - component: {fileID: 848027133}
   - component: {fileID: 848027132}
+  - component: {fileID: 848027135}
+  - component: {fileID: 848027134}
   m_Layer: 0
   m_Name: Corner 3_0 (2)
   m_TagString: Corner
@@ -2579,6 +2918,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!68 &848027134
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848027131}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.0865536, y: -0.31125158}
+  - {x: -0.5412909, y: -0.48777276}
+  - {x: -0.39126083, y: -0.79147226}
+  - {x: -0.33771527, y: -1.0587337}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &848027135
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848027131}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.9851692, y: 1.0398387}
+  - {x: -0.4514546, y: 0.9755888}
+  - {x: -0.10116633, y: 0.8299723}
+  - {x: 0.30223793, y: 0.6080285}
+  - {x: 0.61015064, y: 0.27129743}
+  - {x: 0.6109603, y: 0.2704582}
+  - {x: 0.61247665, y: 0.26879784}
+  - {x: 0.83746547, y: -0.03675847}
+  - {x: 1.0025359, y: -0.5868025}
+  - {x: 1.0487661, y: -0.9714508}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &895830962
 GameObject:
   m_ObjectHideFlags: 0
@@ -2589,6 +3024,9 @@ GameObject:
   m_Component:
   - component: {fileID: 895830964}
   - component: {fileID: 895830963}
+  - component: {fileID: 895830967}
+  - component: {fileID: 895830966}
+  - component: {fileID: 895830965}
   m_Layer: 0
   m_Name: Road 3_0 (5)
   m_TagString: Road
@@ -2666,6 +3104,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &895830965
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895830962}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.6918475, y: -3.621025}
+  - {x: 0.70509464, y: 3.5658808}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &895830966
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895830962}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.66833335, y: -3.5475016}
+  - {x: -0.6550862, y: 3.602643}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &895830967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895830962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &904098841
 GameObject:
   m_ObjectHideFlags: 0
@@ -3531,6 +4074,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1092695911}
   - component: {fileID: 1092695910}
+  - component: {fileID: 1092695914}
+  - component: {fileID: 1092695913}
+  - component: {fileID: 1092695912}
   m_Layer: 0
   m_Name: Road 3_0 (4)
   m_TagString: Road
@@ -3608,6 +4154,112 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1092695912
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092695909}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.67876405, y: -3.5727377}
+  - {x: 0.68181133, y: 1.5120354}
+  - {x: 0.68297607, y: 3.455599}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1092695913
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092695909}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.6829751, y: -3.4555988}
+  - {x: -0.67712086, y: 3.4823525}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &1092695914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092695909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &1113821561
 GameObject:
   m_ObjectHideFlags: 0
@@ -3843,6 +4495,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1235425180}
   - component: {fileID: 1235425179}
+  - component: {fileID: 1235425183}
+  - component: {fileID: 1235425182}
+  - component: {fileID: 1235425181}
   m_Layer: 0
   m_Name: Curve 4_0 (2)
   m_TagString: Curve
@@ -3920,6 +4575,146 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1235425181
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235425178}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.31662107, y: -3.3252125}
+  - {x: -0.31662083, y: -3.3252125}
+  - {x: -0.29182434, y: -1.0730145}
+  - {x: 0.03804016, y: -0.35407376}
+  - {x: 0.7708111, y: 0.25804424}
+  - {x: 1.3103838, y: 0.40265083}
+  - {x: 1.6683333, y: 0.41903067}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1235425182
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235425178}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.6631963, y: 1.7568192}
+  - {x: 1.654275, y: 1.8070865}
+  - {x: 1.0838203, y: 1.7717714}
+  - {x: 1.0838203, y: 1.7503471}
+  - {x: 0.5777788, y: 1.6154995}
+  - {x: 0.11952686, y: 1.4409013}
+  - {x: -0.31222057, y: 1.1743326}
+  - {x: -0.3348701, y: 2.935174}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1235425183
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235425178}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.6953671, y: -3.4276698}
+  - {x: -1.6631963, y: 2.9565983}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1235608283
 GameObject:
   m_ObjectHideFlags: 0
@@ -3930,6 +4725,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1235608285}
   - component: {fileID: 1235608284}
+  - component: {fileID: 1235608288}
+  - component: {fileID: 1235608287}
+  - component: {fileID: 1235608286}
   m_Layer: 0
   m_Name: Road 3_0 (1)
   m_TagString: Road
@@ -4007,6 +4805,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1235608286
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235608283}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.7359945, y: -3.4989195}
+  - {x: 0.73973995, y: 3.427512}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1235608287
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235608283}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.66833335, y: -3.4275126}
+  - {x: -0.6883902, y: 3.40371}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &1235608288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235608283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &1295480231
 GameObject:
   m_ObjectHideFlags: 0
@@ -4153,6 +5056,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1335943099}
   - component: {fileID: 1335943098}
+  - component: {fileID: 1335943102}
+  - component: {fileID: 1335943101}
+  - component: {fileID: 1335943100}
   m_Layer: 0
   m_Name: Road 3_0 (6)
   m_TagString: Road
@@ -4230,6 +5136,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1335943100
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335943097}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.690885, y: -3.57101}
+  - {x: 0.7112563, y: 3.4464397}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1335943101
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335943097}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.69694835, y: 3.5986915}
+  - {x: -0.70519394, y: -3.4187577}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &1335943102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335943097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &1419519908
 GameObject:
   m_ObjectHideFlags: 0
@@ -4240,6 +5251,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1419519910}
   - component: {fileID: 1419519909}
+  - component: {fileID: 1419519912}
+  - component: {fileID: 1419519915}
+  - component: {fileID: 1419519914}
   m_Layer: 0
   m_Name: Curve 4_0 (1)
   m_TagString: Curve
@@ -4317,6 +5331,146 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!68 &1419519912
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419519908}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.6966296, y: 4.357512}
+  - {x: -1.6988338, y: -3.338873}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1419519914
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419519908}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.30264592, y: 3.3598354}
+  - {x: -0.3182638, y: 1.119511}
+  - {x: 0.08561148, y: 1.3949039}
+  - {x: 0.5906287, y: 1.6196349}
+  - {x: 1.1457815, y: 1.7906988}
+  - {x: 1.6925048, y: 1.7524318}
+  - {x: 1.6925048, y: 1.7524318}
+  - {x: 1.6925043, y: 1.7524316}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1419519915
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419519908}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.7035884, y: 0.42300066}
+  - {x: 1.1445867, y: 0.35675526}
+  - {x: 0.7909605, y: 0.23592277}
+  - {x: 0.2094453, y: -0.16197497}
+  - {x: -0.16854912, y: -0.7563887}
+  - {x: -0.33271068, y: -1.364769}
+  - {x: -0.31372797, y: -3.3477495}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1429494576
 GameObject:
   m_ObjectHideFlags: 0
@@ -4550,6 +5704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1502439676}
   - component: {fileID: 1502439675}
+  - component: {fileID: 1502439677}
   m_Layer: 0
   m_Name: Road 2_0 (1)
   m_TagString: Road
@@ -4627,6 +5782,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1502439677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502439674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &1528768028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4637,6 +5811,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1528768030}
   - component: {fileID: 1528768029}
+  - component: {fileID: 1528768032}
+  - component: {fileID: 1528768031}
   m_Layer: 0
   m_Name: Corner 3_0
   m_TagString: Corner
@@ -4714,6 +5890,98 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1528768031
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528768028}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.0585161, y: 1.0207691}
+  - {x: -0.39279556, y: 0.9555397}
+  - {x: 0.10717058, y: 0.7258878}
+  - {x: 0.57014775, y: 0.2940421}
+  - {x: 0.9663558, y: -0.41961622}
+  - {x: 1.0016667, y: -1.0138087}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1528768032
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528768028}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.0329801, y: -0.3601036}
+  - {x: -0.6850505, y: -0.41000843}
+  - {x: -0.42938328, y: -0.6653285}
+  - {x: -0.36494052, y: -1.006782}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1560985450
 GameObject:
   m_ObjectHideFlags: 0
@@ -5606,6 +6874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1674474550}
   - component: {fileID: 1674474549}
+  - component: {fileID: 1674474551}
   m_Layer: 0
   m_Name: Bridge_0
   m_TagString: Bridge
@@ -5683,6 +6952,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1674474551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674474548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &1702799388
 GameObject:
   m_ObjectHideFlags: 0
@@ -5693,6 +6981,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1702799390}
   - component: {fileID: 1702799389}
+  - component: {fileID: 1702799393}
+  - component: {fileID: 1702799392}
+  - component: {fileID: 1702799391}
   m_Layer: 0
   m_Name: Road 1_0 (1)
   m_TagString: Road
@@ -5770,6 +7061,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!68 &1702799391
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702799388}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.686355, y: 0.9371136}
+  - {x: -0.6832738, y: -0.9190929}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1702799392
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702799388}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.6652522, y: 0.9010713}
+  - {x: 0.6683335, y: -0.9010715}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &1702799393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702799388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &1717854069
 GameObject:
   m_ObjectHideFlags: 0
@@ -5780,6 +7176,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1717854071}
   - component: {fileID: 1717854070}
+  - component: {fileID: 1717854076}
+  - component: {fileID: 1717854075}
+  - component: {fileID: 1717854074}
+  - component: {fileID: 1717854073}
+  - component: {fileID: 1717854072}
   m_Layer: 0
   m_Name: Intersection 1_0
   m_TagString: Intersection
@@ -5857,6 +7258,207 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1717854072
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717854069}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.65311265, y: -2.486526}
+  - {x: 0.69225216, y: -1.1288795}
+  - {x: 0.90235186, y: -0.86597824}
+  - {x: 1.1853733, y: -0.69452477}
+  - {x: 2.5172088, y: -0.71487665}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1717854073
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717854069}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.68419385, y: 2.5020666}
+  - {x: 0.71639156, y: 1.1020412}
+  - {x: 1.0566211, y: 0.7060933}
+  - {x: 2.5172055, y: 0.6682539}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1717854074
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717854069}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.5213125, y: -0.66796494}
+  - {x: -1.5933914, y: -0.70663786}
+  - {x: -1.0963039, y: -0.6863384}
+  - {x: -0.7455807, y: -1.0329924}
+  - {x: -0.7006376, y: -2.506482}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1717854075
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717854069}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.5606048, y: 0.6679654}
+  - {x: -1.1570768, y: 0.7085233}
+  - {x: -0.7283392, y: 1.0032554}
+  - {x: -0.68099093, y: 2.5343394}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &1717854076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717854069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &1763762265
 GameObject:
   m_ObjectHideFlags: 0
@@ -5867,6 +7469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1763762267}
   - component: {fileID: 1763762266}
+  - component: {fileID: 1763762268}
   m_Layer: 0
   m_Name: Bridge_0 (1)
   m_TagString: Bridge
@@ -5944,6 +7547,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1763762268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763762265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &1767539606
 GameObject:
   m_ObjectHideFlags: 0
@@ -6120,6 +7742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1821059484}
   - component: {fileID: 1821059483}
+  - component: {fileID: 1821059485}
   m_Layer: 0
   m_Name: Road 3_0 (7)
   m_TagString: Road
@@ -6197,6 +7820,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1821059485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821059482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &1889885261
 GameObject:
   m_ObjectHideFlags: 0
@@ -6207,6 +7849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1889885263}
   - component: {fileID: 1889885262}
+  - component: {fileID: 1889885264}
   m_Layer: 0
   m_Name: Road 2_0 (3)
   m_TagString: Road
@@ -6284,6 +7927,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1889885264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889885261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &1926369252
 GameObject:
   m_ObjectHideFlags: 0
@@ -6427,6 +8089,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2060648066}
   - component: {fileID: 2060648065}
+  - component: {fileID: 2060648069}
+  - component: {fileID: 2060648068}
+  - component: {fileID: 2060648067}
   m_Layer: 0
   m_Name: Curve 2_0
   m_TagString: Curve
@@ -6504,6 +8169,144 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!68 &2060648067
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060648064}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.31605458, y: -3.3312716}
+  - {x: -0.28602293, y: -1.1337467}
+  - {x: -0.10000205, y: -0.6169269}
+  - {x: 0.21777558, y: -0.1931532}
+  - {x: 0.72711396, y: 0.19989112}
+  - {x: 1.1612055, y: 0.3688717}
+  - {x: 1.69307, y: 0.4370231}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &2060648068
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060648064}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.6600885, y: -3.339516}
+  - {x: -1.6794268, y: 3.4302192}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &2060648069
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060648064}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.31603658, y: 3.347762}
+  - {x: -0.31495327, y: 1.1544267}
+  - {x: 0.17978714, y: 1.4553175}
+  - {x: 0.6543298, y: 1.6467408}
+  - {x: 1.2251571, y: 1.7759874}
+  - {x: 1.6600884, y: 1.7975667}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &2061064154
 GameObject:
   m_ObjectHideFlags: 0
@@ -6514,6 +8317,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2061064156}
   - component: {fileID: 2061064155}
+  - component: {fileID: 2061064159}
+  - component: {fileID: 2061064158}
+  - component: {fileID: 2061064157}
   m_Layer: 0
   m_Name: Road 1_0
   m_TagString: Road
@@ -6591,6 +8397,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &2061064157
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061064154}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.6707694, y: -0.8491864}
+  - {x: 0.69010764, y: 0.8600731}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &2061064158
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061064154}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.6574462, y: -0.8491869}
+  - {x: -0.6707694, y: 0.94717026}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &2061064159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061064154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610af458f0374634d84c6ba82d03f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPackages: 3
+  pickupTime: 1
+  deliveryTime: 3
+  spriteRenderer: {fileID: 0}
+  defaultCar: {fileID: 0}
+  yellowCar: {fileID: 0}
+  blueCar: {fileID: 0}
 --- !u!1 &2091998540
 GameObject:
   m_ObjectHideFlags: 0
@@ -6601,6 +8512,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2091998542}
   - component: {fileID: 2091998541}
+  - component: {fileID: 2091998544}
+  - component: {fileID: 2091998543}
   m_Layer: 0
   m_Name: Curve 1_0
   m_TagString: Curve
@@ -6678,6 +8591,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &2091998543
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091998540}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.7289822, y: 2.153034}
+  - {x: -1.6180744, y: 1.247869}
+  - {x: -1.276041, y: 0.34953833}
+  - {x: -0.6609552, y: -0.34916973}
+  - {x: -0.011366129, y: -1.0007753}
+  - {x: 0.22139835, y: -1.475306}
+  - {x: 0.31889665, y: -2.0923853}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &2091998544
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091998540}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.33405876, y: 2.1075473}
+  - {x: -0.13693166, y: 1.1483951}
+  - {x: 0.45219755, y: 0.5158706}
+  - {x: 1.1040471, y: -0.10936785}
+  - {x: 1.5554333, y: -1.1012774}
+  - {x: 1.7289821, y: -2.1378722}
+  - {x: 1.7289821, y: -2.1378722}
+  - {x: 1.7289821, y: -2.1378722}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &2092060210
 GameObject:
   m_ObjectHideFlags: 0
@@ -7047,6 +9057,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2124501539}
   - component: {fileID: 2124501538}
+  - component: {fileID: 2124501541}
+  - component: {fileID: 2124501540}
   m_Layer: 0
   m_Name: Corner 3_0 (3)
   m_TagString: Corner
@@ -7124,6 +9136,101 @@ Transform:
   m_Children: []
   m_Father: {fileID: 984740217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!68 &2124501540
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124501537}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.0181576, y: -0.33807468}
+  - {x: -0.74117565, y: -0.38007832}
+  - {x: -0.49052143, y: -0.5751667}
+  - {x: -0.3810873, y: -0.78579235}
+  - {x: -0.3176483, y: -1.0389614}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &2124501541
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124501537}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.018891, y: 1.0282278}
+  - {x: -0.59834576, y: 0.97793674}
+  - {x: -0.251894, y: 0.89188385}
+  - {x: 0.24083614, y: 0.60764694}
+  - {x: 0.6149807, y: 0.24679661}
+  - {x: 0.8774071, y: -0.22357464}
+  - {x: 1.0195694, y: -0.5994787}
+  - {x: 1.0458313, y: -1.0328016}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &2135165237
 GameObject:
   m_ObjectHideFlags: 0
