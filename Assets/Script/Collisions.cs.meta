@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: 610af458f0374634d84c6ba82d03f17a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - spriteRenderer: {instanceID: 0}
+  - defaultCar: {fileID: 4273724031106649725, guid: 949f5f0986a285741872438b9638f3f9, type: 3}
+  - greenCar: {fileID: -8981051936727681591, guid: 30804b8c88bfafe4ba0766d6751d05f9, type: 3}
+  - blueCar: {fileID: 944204929983791209, guid: e706f1f55053ecc46a6a269c5a408bc0, type: 3}
+  - yellowCar: {fileID: 9089695645353676025, guid: 8e22211d0935fa2409a103fc88bb3679, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
