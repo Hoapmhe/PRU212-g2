@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -8,19 +8,11 @@ public class Collisions : MonoBehaviour
     [SerializeField] private float pickupTime = 1f;
     [SerializeField] private float deliveryTime = 3f;
 
-<<<<<<< Updated upstream
-=======
-    [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private Sprite defaultCar;
-    [SerializeField] private Sprite greenCar;
-    [SerializeField] private Sprite blueCar;
-    [SerializeField] private Sprite yellowCar;
-
->>>>>>> Stashed changes
     private int packageCount = 0;
     private DriverController driverController;
     private Coroutine pickupCoroutine;
     private Coroutine deliveryCoroutine;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
     private void Start()
@@ -35,6 +27,16 @@ public class Collisions : MonoBehaviour
 
     private void Start()
     {
+=======
+    private ReceiveDisplay receiveDisplay;
+    private Rigidbody2D rb;
+
+    private Stack<CarColor> carColorStack = new Stack<CarColor>(); // Lưu lịch sử màu
+    private CarColor currentCarColor = CarColor.Default;
+
+    private void Start()
+    {
+>>>>>>> Stashed changes
         driverController = GetComponent<DriverController>();
         receiveDisplay = FindFirstObjectByType<ReceiveDisplay>();
         rb = GetComponent<Rigidbody2D>();
@@ -69,8 +71,11 @@ public class Collisions : MonoBehaviour
     {
         Debug.Log("Bắt đầu nhặt quà... ⏳ (1s)");
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         yield return new WaitForSeconds(pickupTime); // Chờ 1 giây
 =======
+=======
+>>>>>>> Stashed changes
         yield return new WaitForSeconds(pickupTime);
 >>>>>>> Stashed changes
 
@@ -80,11 +85,14 @@ public class Collisions : MonoBehaviour
         Destroy(package);
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         pickupCoroutine = null; // Reset Coroutine sau khi hoàn thành
     }
 
     private IEnumerator DeliverPackages()
 =======
+=======
+>>>>>>> Stashed changes
         // Lưu màu cũ vào Stack
         carColorStack.Push(currentCarColor);
 
@@ -96,6 +104,9 @@ public class Collisions : MonoBehaviour
     }
 
     private IEnumerator DeliverPackages(GameObject location)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     {
         Location locComponent = location.GetComponent<Location>();
@@ -117,10 +128,30 @@ public class Collisions : MonoBehaviour
 
         Debug.Log("Giao hàng thành công! ✅");
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         packageCount = 0; // Reset số quà sau khi giao
         driverController.ResetSpeed(); // Khôi phục tốc độ
 
         deliveryCoroutine = null; // Reset Coroutine sau khi hoàn thành
+=======
+        receiveDisplay.IncrementReceivedCount(1);
+        packageCount--;
+        receiveDisplay.CountBoxOnCar(packageCount);
+        driverController.ResetSpeed();
+
+        // Lấy lại màu trước đó
+        if (carColorStack.Count > 0)
+        {
+            currentCarColor = carColorStack.Pop();
+        }
+        else
+        {
+            currentCarColor = CarColor.Default;
+        }
+        UpdateCarColor(currentCarColor);
+
+        deliveryCoroutine = null;
+>>>>>>> Stashed changes
 =======
         receiveDisplay.IncrementReceivedCount(1);
         packageCount--;
@@ -178,5 +209,8 @@ public class Collisions : MonoBehaviour
                 break;
         }
     }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
