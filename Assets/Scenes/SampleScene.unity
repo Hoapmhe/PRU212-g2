@@ -5090,18 +5090,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectsToSpawn:
-  - name: Obstacle
+  - name: Rock
     prefab: {fileID: 2039974291385363845, guid: ee6ae05db4f50a145aacfab517a55589, type: 3}
-    numberToSpawn: 5
+    numberToSpawn: 10
     tag: Rock
-  - name: Package
-    prefab: {fileID: 1771653685465069755, guid: 97f4348ece8a17942a88906de93d9cc2, type: 3}
-    numberToSpawn: 5
-    tag: Package
-  - name: Location
-    prefab: {fileID: 3099394632963349518, guid: a73828902a7b69f40b544a58c226d796, type: 3}
+    locationColor: 0
+  - name: Location Green
+    prefab: {fileID: 235387032228204450, guid: 5b45fd53d4fa7ba4d86ac7f8d42063b5, type: 3}
     numberToSpawn: 1
     tag: Location
+    locationColor: 1
+  - name: Location Yellow
+    prefab: {fileID: 4124617640354931870, guid: 1a4ab384949d10d4cabc6f14ca8a2b29, type: 3}
+    numberToSpawn: 1
+    tag: Location
+    locationColor: 3
+  - name: Location Blue
+    prefab: {fileID: 3368386033409772092, guid: 471289e42f629d3479ddb8d143024da1, type: 3}
+    numberToSpawn: 1
+    tag: Location
+    locationColor: 2
+  - name: Package
+    prefab: {fileID: 1771653685465069755, guid: 97f4348ece8a17942a88906de93d9cc2, type: 3}
+    numberToSpawn: 14
+    tag: Package
+    locationColor: 0
   spawnObjectTags:
   - Bridge
   - Road
@@ -7378,8 +7391,9 @@ MonoBehaviour:
   deliveryTime: 3
   spriteRenderer: {fileID: 1641681080}
   defaultCar: {fileID: 4273724031106649725, guid: 949f5f0986a285741872438b9638f3f9, type: 3}
-  yellowCar: {fileID: 9089695645353676025, guid: 8e22211d0935fa2409a103fc88bb3679, type: 3}
+  greenCar: {fileID: -8981051936727681591, guid: 30804b8c88bfafe4ba0766d6751d05f9, type: 3}
   blueCar: {fileID: 944204929983791209, guid: e706f1f55053ecc46a6a269c5a408bc0, type: 3}
+  yellowCar: {fileID: 9089695645353676025, guid: 8e22211d0935fa2409a103fc88bb3679, type: 3}
 --- !u!1 &1647306210
 GameObject:
   m_ObjectHideFlags: 0

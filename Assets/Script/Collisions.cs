@@ -1,31 +1,35 @@
 ﻿using UnityEngine;
-using System.Collections; // Cần import để dùng Coroutine
+using System.Collections;
+using System.Collections.Generic;
+using Assets.Script;
 
 public class Collisions : MonoBehaviour
 {
     [SerializeField] private int maxPackages = 3;
-    [SerializeField] private float pickupTime = 1f; // Thời gian nhặt quà (1s)
-    [SerializeField] private float deliveryTime = 3f; // Thời gian giao hàng (3s)
+    [SerializeField] private float pickupTime = 1f;
+    [SerializeField] private float deliveryTime = 3f;
 
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private Sprite defaultCar; // Xe màu hồng
-    [SerializeField] private Sprite yellowCar;   // Xe màu vang
-    [SerializeField] private Sprite blueCar;     // Xe màu xanh
-
+    [SerializeField] private Sprite defaultCar;
+    [SerializeField] private Sprite greenCar;
+    [SerializeField] private Sprite blueCar;
+    [SerializeField] private Sprite yellowCar;
 
     private int packageCount = 0;
     private DriverController driverController;
     private Coroutine pickupCoroutine;
     private Coroutine deliveryCoroutine;
-    private ReceiveDisplay receiveDisplay; //hien thi so luong Package da giao
-    private Rigidbody2D rb; // Rigidbody2D của xe
+    private ReceiveDisplay receiveDisplay;
+    private Rigidbody2D rb;
+
+    private Stack<CarColor> carColorStack = new Stack<CarColor>(); // Lưu lịch sử màu
+    private CarColor currentCarColor = CarColor.Default;
 
     private void Start()
     {
-        driverController = GetComponent<DriverController>(); // Lấy script DriverController từ xe
+        driverController = GetComponent<DriverController>();
         receiveDisplay = FindFirstObjectByType<ReceiveDisplay>();
         rb = GetComponent<Rigidbody2D>();
-
 
         if (receiveDisplay == null)
         {
@@ -37,7 +41,7 @@ public class Collisions : MonoBehaviour
     {
         if (other.CompareTag("Package") && packageCount < maxPackages)
         {
-            if (pickupCoroutine == null) // Kiểm tra xem có đang nhặt quà không
+            if (pickupCoroutine == null)
             {
                 pickupCoroutine = StartCoroutine(PickupPackage(other.gameObject));
             }
@@ -47,14 +51,14 @@ public class Collisions : MonoBehaviour
         {
             if (deliveryCoroutine == null)
             {
-                deliveryCoroutine = StartCoroutine(DeliverPackages());
+                deliveryCoroutine = StartCoroutine(DeliverPackages(other.gameObject));
             }
         }
     }
 
     private IEnumerator PickupPackage(GameObject package)
     {
-        Debug.Log("Bắt đầu nhặt quà... ⏳ (2s)");
+        Debug.Log("Bắt đầu nhặt quà... ⏳ (1s)");
         yield return new WaitForSeconds(pickupTime);
 
         packageCount++;
@@ -62,37 +66,53 @@ public class Collisions : MonoBehaviour
         driverController.DecreaseSpeed();
         Destroy(package);
 
-        // Thay đổi màu xe
-        if (packageCount == 1 || packageCount == 2)
-        {
-            spriteRenderer.sprite = yellowCar; // Xe xanh khi có 1 hoặc 2 quà
-        }
-        else if (packageCount == 3)
-        {
-            spriteRenderer.sprite = blueCar; // Xe đỏ khi đủ 3 quà
-        }
+        // Lưu màu cũ vào Stack
+        carColorStack.Push(currentCarColor);
+
+        // Random màu mới cho xe (trừ Default)
+        currentCarColor = (CarColor)Random.Range(1, 4);
+        UpdateCarColor(currentCarColor);
 
         pickupCoroutine = null;
     }
 
-
-    private IEnumerator DeliverPackages()
+    private IEnumerator DeliverPackages(GameObject location)
     {
+        Location locComponent = location.GetComponent<Location>();
+        if (locComponent == null)
+        {
+            Debug.LogError("Location không có component Location!");
+            yield break;
+        }
+
+        CarColor locationColor = locComponent.locationColor;
+        if (locationColor != currentCarColor)
+        {
+            Debug.Log("Sai địa điểm giao hàng! ❌ Đi tìm đúng địa điểm.");
+            yield break;
+        }
+
         Debug.Log("Bắt đầu giao hàng... 📦 (3s)");
-        yield return new WaitForSeconds(deliveryTime); // Chờ 3 giây
+        yield return new WaitForSeconds(deliveryTime);
 
         Debug.Log("Giao hàng thành công! ✅");
-        receiveDisplay.IncrementReceivedCount(packageCount);
-
-        packageCount = 0; // Reset số quà sau khi giao
+        receiveDisplay.IncrementReceivedCount(1);
+        packageCount--;
         receiveDisplay.CountBoxOnCar(packageCount);
-        driverController.ResetSpeed(); // Khôi phục tốc độ
+        driverController.ResetSpeed();
 
-        // Đổi lại xe về màu hồng sau khi giao hàng
-        spriteRenderer.sprite = defaultCar;
-        deliveryCoroutine = null; // Reset Coroutine sau khi hoàn thành
+        // Lấy lại màu trước đó
+        if (carColorStack.Count > 0)
+        {
+            currentCarColor = carColorStack.Pop();
+        }
+        else
+        {
+            currentCarColor = CarColor.Default;
+        }
+        UpdateCarColor(currentCarColor);
 
-        
+        deliveryCoroutine = null;
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -110,23 +130,22 @@ public class Collisions : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void UpdateCarColor(CarColor color)
     {
-        if (collision.gameObject.CompareTag("Rock")) // Hòn đá có tag là "Rock"
+        switch (color)
         {
-            if (rb != null)
-            {
-                float impactForce = rb.linearVelocity.magnitude; // Lấy tốc độ xe
-                Debug.Log("Va vào hòn đá! Lực va chạm: " + impactForce);
-
-                // Tạo phản lực nhẹ nếu xe đang đi nhanh
-                if (impactForce > 2f) // Ngưỡng lực va chạm
-                {
-                    Vector2 bounceDirection = collision.contacts[0].normal; // Hướng phản lực
-                    rb.AddForce(bounceDirection * impactForce * 50f); // Điều chỉnh độ nảy
-                }
-            }
+            case CarColor.Green:
+                spriteRenderer.sprite = greenCar;
+                break;
+            case CarColor.Blue:
+                spriteRenderer.sprite = blueCar;
+                break;
+            case CarColor.Yellow:
+                spriteRenderer.sprite = yellowCar;
+                break;
+            default:
+                spriteRenderer.sprite = defaultCar;
+                break;
         }
     }
-
 }
