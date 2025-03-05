@@ -19,7 +19,7 @@ public class Collisions : MonoBehaviour
     private DriverController driverController;
     private Coroutine pickupCoroutine;
     private Coroutine deliveryCoroutine;
-    private ReceiveDisplay receiveDisplay;
+    private TextDisplay textDisplay;
     private Rigidbody2D rb;
 
     private Stack<CarColor> carColorStack = new Stack<CarColor>(); // Lưu lịch sử màu
@@ -28,10 +28,10 @@ public class Collisions : MonoBehaviour
     private void Start()
     {
         driverController = GetComponent<DriverController>();
-        receiveDisplay = FindFirstObjectByType<ReceiveDisplay>();
+        textDisplay = FindFirstObjectByType<TextDisplay>();
         rb = GetComponent<Rigidbody2D>();
 
-        if (receiveDisplay == null)
+        if (textDisplay == null)
         {
             Debug.LogError("Không tìm thấy ReceiveDisplay trong Scene!");
         }
@@ -62,7 +62,7 @@ public class Collisions : MonoBehaviour
         yield return new WaitForSeconds(pickupTime);
 
         packageCount++;
-        receiveDisplay.CountBoxOnCar(packageCount);
+        textDisplay.CountBoxOnCar(packageCount);
         driverController.DecreaseSpeed();
         Destroy(package);
 
@@ -96,9 +96,9 @@ public class Collisions : MonoBehaviour
         yield return new WaitForSeconds(deliveryTime);
 
         Debug.Log("Giao hàng thành công! ✅");
-        receiveDisplay.IncrementReceivedCount(1);
+        textDisplay.IncrementReceivedCount(1);
         packageCount--;
-        receiveDisplay.CountBoxOnCar(packageCount);
+        textDisplay.CountBoxOnCar(packageCount);
         driverController.ResetSpeed();
 
         // Lấy lại màu trước đó
